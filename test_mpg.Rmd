@@ -1,0 +1,18 @@
+---
+title: "test repo figures"
+author: "Will Geiken"
+date: "10/26/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+```
+
+```{r}
+ggplot(data = mpg, aes(x = class, y = cty)) +
+	geom_jitter()
+```
+
